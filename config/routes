@@ -1,0 +1,16 @@
+/static StaticR Static getStatic
+/auth   AuthR   Auth   getAuth
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/                            HomeR              GET
+
+/lists                       IndexTodoListR     GET
+/list/new                    NewTodoListR       POST
+/list/#!TodoListId           TodoListR          GET
+/list/#!TodoListId/delete    DelTodoListR       POST
+
+/list/#!TodoListId/newtask   NewTaskR           POST
+/task/#TaskId/done           DoneTaskR          POST
+/task/#TaskId/delete         DeleteTaskR        POST

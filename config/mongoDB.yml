@@ -1,0 +1,24 @@
+Default: &defaults
+  user: ToDoList
+  password: ToDoList
+  host: localhost
+  database: ToDoList
+  connections: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: ToDoList_test
+  <<: *defaults
+
+Staging:
+  database: ToDoList_staging
+  connections: 100
+  <<: *defaults
+
+Production:
+  database: ToDoList_production
+  connections: 100
+  host: localhost
+  <<: *defaults
